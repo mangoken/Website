@@ -1,0 +1,84 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Streamline your legal needs with our user-friendly website featuring auto-fill forms and secure document automation.">
+    <title>Legal Services Simplified</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to LegalEase</h1>
+            <p>Streamline your legal needs with ease.</p>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Family Law</li>
+                <li>Estate Planning</li>
+                <li>Contract Review</li>
+                <li>Small Business Legal Assistance</li>
+            </ul>
+        </section>
+
+        <section id="features" class="container">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <h3>Auto-Fill Forms</h3>
+                <p>Our dynamic forms adapt to your needs, saving you time and effort.</p>
+            </div>
+            <div class="feature">
+                <h3>Document Automation</h3>
+                <p>Generate legally compliant documents in minutes.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Client Portal</h3>
+                <p>Track your documents and stay organized with our encrypted platform.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service Needed:</label>
+                <select id="service" name="service" required>
+                    <option value="family-law">Family Law</option>
+                    <option value="estate-planning">Estate Planning</option>
+                    <option value="contract-review">Contract Review</option>
+                    <option value="business-assistance">Business Assistance</option>
+                </select>
+
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LegalEase. All rights reserved.</p>
+            <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
